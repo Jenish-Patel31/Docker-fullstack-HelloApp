@@ -12,7 +12,7 @@ function App(){
   // },[])
 
   useEffect(() => {
-    fetch("http://backend:5000/hello", { cache: "no-store" } )
+    fetch("http://localhost:5000/hello", { cache: "no-store" } )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
